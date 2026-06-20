@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encryption & Decryption</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="script.js" />
+</head>
+<body>
+  <nav>
+    <div class="logo">🔐 Encrypto</div>
+    <button id="modeToggle">🌙</button>
+  </nav>
+
+  <main class="container">
+    <!-- ENCRYPTION SECTION (LEFT) -->
+    <div class="section left">
+      <h2>Input</h2>
+      <textarea id="inputText" placeholder="Enter text here..."></textarea>
+      <input type="number" id="shift" placeholder="Shift Value (e.g. 3)" />
+      <select id="modeSelect">
+        <option value="encrypt">Encrypt</option>
+        <option value="decrypt">Decrypt</option>
+      </select>
+      <button onclick="runCipher()">▶ RUN</button>
+    </div>
+
+    <!-- OUTPUT SECTION (RIGHT) -->
+    <div class="section right">
+      <h2>Encrypted Output</h2>
+      <textarea id="outputText" readonly placeholder="Encrypted message..."></textarea>
+
+      <h2>Auto Decrypted</h2>
+      <textarea id="autoDecryptedText" readonly placeholder="Decrypted from above..."></textarea>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Encrypto. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
